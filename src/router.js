@@ -14,12 +14,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
+      path: '/about-svg',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+    },
+    {
+      path: '/ssvg',
+      name: 'ssvg',
+      component: () => import(/* webpackChunkName: "about" */ './views/Ssvg.vue')
+    },
   ]
 })
