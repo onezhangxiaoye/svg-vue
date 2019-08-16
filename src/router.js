@@ -23,5 +23,15 @@ export default new Router({
       name: 'ssvg',
       component: () => import(/* webpackChunkName: "about" */ './views/Ssvg.vue')
     },
+    {
+      path: '/svgTest',
+      name: 'svgTest',
+      component: () => import(/* webpackChunkName: "about" */ './views/SvgTest.vue')
+    },
+    {
+      path: '/transitionTest',
+      name: 'transitionTest',
+      component: () => import(/* webpackChunkName: "about" */ './views/TransitionTest.vue')
+    },
   ]
 })
