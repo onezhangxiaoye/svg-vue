@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "svg-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "qs": "^6.7.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -17,7 +18,8 @@
     "@vue/cli-service": "^3.10.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack-dev-server": "^3.7.2"
   },
   "postcss": {
     "plugins": {
