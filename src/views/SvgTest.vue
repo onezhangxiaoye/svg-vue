@@ -35,7 +35,11 @@ export default {
         getPoint(e){
             this.listRect.push(e);
             if (this.listRect.length === this.params.children.length) {
-                this.$refs.svg.offsetWidth = 1;
+                let width = this.$refs.svg.offsetWidth;
+                let padding = width*0.05;
+                let childrenWidth = this.listRect.reduce((a,b) => a + b.width ,0);
+                let wi = (width - padding - childrenWidth) / (this.listRect.length + 1);
+                
             }
         } 
     },
