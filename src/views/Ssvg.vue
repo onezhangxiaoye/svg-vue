@@ -30,7 +30,7 @@ export default {
 
     },
     methods: {
-        getAttr
+        getAttr(){}
     }
 }
 

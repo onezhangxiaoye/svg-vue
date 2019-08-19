@@ -24,6 +24,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/Ssvg.vue')
     },
     {
+      path: '/svgTest',
+      name: 'SvgTest',
+      component: () => import(/* webpackChunkName: "about" */ './views/SvgTest.vue')
+    },
+    {
       path: '/animaition',
       name: 'animaition',
       component: () => import(/* webpackChunkName: "about" */ './views/Animaition.vue')
